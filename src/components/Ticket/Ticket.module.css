@@ -1,0 +1,32 @@
+p{
+    display: inline-block;
+}
+
+div{
+    position: relative;
+}
+
+.content{
+    display: grid;
+    grid-template-areas: 
+    "TicketId TicketId"
+    "TicketFName TicketLName";
+    gap: 0.5em;
+    width: 50%;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    float: left;
+}
+
+#ticketId{
+    grid-area: TicketId;
+    text-decoration: underline;
+}
+
+#ticketFirstName{
+    grid-area: TicketFName;
+}
+
+#ticketLastName{
+    grid-area: TicketLName;
+}
