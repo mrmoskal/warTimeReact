@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar{
+  opacity: 0;
+
+  transition: all 0.2s ease-in-out;
+}
+
+::-webkit-scrollbar:hover{
+  opacity: 1;
+}
+
 .App {
   text-align: center;
 }
@@ -18,8 +28,4 @@
   justify-content: top;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.main-header{
-  text-shadow: 0 -5px darkgray;
 }

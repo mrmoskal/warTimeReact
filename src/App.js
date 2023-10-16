@@ -1,5 +1,5 @@
 import './App.css';
-import Ticket from './components/Ticket/Ticket';
+import Tickets from './components/Tickets/Tickets';
 
 function App() {
   // phase 1 - states
@@ -16,19 +16,20 @@ function App() {
     },
     {
       id: 2,
+      firstName: 'jenkinz',
+      lastName: 'McDonkeldonk'
+    },
+    {
+      id: 3,
       firstName: 'Israel',
       lastName: 'Israeli'
     },
     {
-      id: 3,
+      id: 4,
       firstName: 'Guy',
       lastName: 'Randy'
     }
   ];
-
-  const personList = persons.map(person => {
-    return <Ticket  ticket={person}/>
-  });
 
   // phase 2 - functions
 
@@ -36,8 +37,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="main-header">Welcome</h1>
-        <div className="ticket-list">{personList}</div>
+        <Tickets persons={persons}/>
       </header>
     </div>
   );
